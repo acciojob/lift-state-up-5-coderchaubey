@@ -9,12 +9,12 @@ function Child({setIsLoggedIn}) {
     }
   return (
     <div>
-      <form onSubmit={setLog}>
+      <form>
         <label htmlFor="username" >Username</label>
         <input type="text" required/>
         <label htmlFor="password">Password</label>
         <input type="password" required/>
-        <input type="submit" value="Login"/>
+        <button onClick={setLog}></button>
       </form>
     </div>
   )
