@@ -11,7 +11,7 @@ console.log(isLoggedIn);
     <div>
         <h1>Parent Component</h1>
         {
-            isLoggedIn ? <p>You are logged In!</p> : <Child setIsLoggedIn={setIsLoggedIn} />
+            isLoggedIn ? (<p>You are logged in!</p>): (<Child setIsLoggedIn={setIsLoggedIn} />)
         }
       
     </div>
