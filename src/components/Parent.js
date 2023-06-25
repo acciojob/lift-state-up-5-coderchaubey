@@ -2,11 +2,14 @@ import React,{useState} from 'react'
 import Child from './Child';
 
 function Parent() {
+
 const [isLoggedIn,setIsLoggedIn] = useState(false);
+
 console.log(isLoggedIn);
   return (
+    
     <div>
-        
+        <h1>Parent Component</h1>
         {
             isLoggedIn ? <div>You are logged In!</div> : <Child setIsLoggedIn={setIsLoggedIn} />
         }
